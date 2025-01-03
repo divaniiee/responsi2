@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <style>
+      /* Menyediakan ukuran yang sama untuk semua gambar */
+      .same-size img {
+        width: 100%;
+        height: 250px; /* Anda bisa mengubah tinggi sesuai kebutuhan */
+        object-fit: cover; /* Untuk menjaga proporsi gambar */
+      }
+      /* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fef7f3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section Styling */
+#Order {
+    padding: 60px 15px;
+    display: flex; /* Mengaktifkan flexbox */
+    justify-content: center; /* Mengatur posisi horizontal */
+    align-items: center; /* Mengatur posisi vertikal */
+    min-height: 100vh; /* Membuat tinggi penuh layar */
+}
+
+
+#Order h2 {
+    font-size: 2.5rem;
+    color: #f56b61;
+}
+
+#Order p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Alert Styling */
+.alert {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    color: #856404;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.alert .btn-close {
+    color: #856404;
+}
+
+/* Form Styling */
+form .form-label {
+    font-weight: 500;
+    color: #444;
+}
+/* Styling khusus untuk Order Form */
+#Order form {
+  width: 100%; /* Lebar form penuh */
+  max-width: 2000px; /* Lebar maksimal diperbesar */
+  margin: 0 auto; /* Form tetap di tengah */
+  border: 3px solid #f7b8a4; /* Border form */
+  border-radius: 15px; /* Membulatkan sudut */
+  padding: 50px; /* Menambah ruang dalam form */
+  background: #fff; /* Warna background */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Bayangan form */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+#Order form:hover {
+    transform: translateY(-5px); /* Efek hover - naik sedikit */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Memperkuat bayangan */
+}
+
+#Order .form-control {
+    border-radius: 10px; /* Input field dengan sudut melengkung */
+    border: 1px solid #ddd; /* Warna border input */
+}
+
+#Order button[type="submit"] {
+    border-radius: 10px; /* Tombol submit dengan sudut melengkung */
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk tombol */
+}
+
+#Order button[type="submit"]:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Bayangan lebih kuat saat hover */
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+form .form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: none;
+    font-size: 1rem;
+}
+
+form .form-control:focus {
+    border-color: #f7b8a4;
+    box-shadow: 0 0 5px rgba(247, 184, 164, 0.5);
+}
+
+form textarea.form-control {
+    resize: none;
+}
+
+/* Button Styling */
+form button[type="submit"] {
+    background-color: #f7b8a4;
+    border-color: #f7b8a4;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #f56b61;
+    border-color: #f56b61;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #Order h2 {
+        font-size: 2rem;
+    }
+
+    #Order p {
+        font-size: 0.9rem;
+    }
+}     
+    </style>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="#home" class="w3-bar-item w3-button"><b>Cake</b> Custle</a>
+        <!-- Float links to the right. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+          <a href="#about" class="w3-bar-item w3-button">About</a>
+          <a href="#catalog" class="w3-bar-item w3-button">Catalog</a>
+          <a href="#order form" class="w3-bar-item w3-button">Order Form</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width: 1500px" id="home">
+      <img class="w3-image" src="2.jpg" alt="Architecture" width="1500" height="800" />
+      <div class="w3-display-middle w3-margin-top w3-center">
+        <h1 class="w3-xxlarge w3-text-white">
+          <span class="w3-padding w3-pink w3-opacity-min"><b>Cake</b></span> <span class="w3-hide-small w3-text-pink">Custle</span>
+        </h1>
+      </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="w3-content w3-padding" style="max-width: 1564px">
+      <!-- About Section -->
+      <div class="w3-container w3-padding-32" id="about">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+        <p>
+          Cake Castle adalah sebuah toko kue yang memadukan keanggunan tradisional dengan inovasi modern dalam dunia pastry dan baking. Terletak di jantung kota, toko ini menjadi tujuan favorit bagi pecinta kue yang menghargai cita rasa
+          berkualitas tinggi dan estetika yang menawan.
+        </p>
+        <p>Cake Castle berdiri dengan misi menghadirkan kebahagiaan melalui setiap gigitan. Setiap produk yang dihasilkan mencerminkan perhatian terhadap kualitas bahan, keahlian dalam baking, dan kreativitas dalam desain.</p>
+      </div>
+
+     <!-- Catalog Section -->
+     <div class="w3-container w3-padding-32" id="catalog">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Catalog</h3>
+    </div>
+
+    <div class="w3-row-padding same-size">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-pink w3-padding">Bento Cake</div>
+          <img src="bento cake.jpg" alt="House" />
+        </div>
+        <div class="w3-container">
+          <p>Bento Cake - Kue mini yang praktis dan cocok untuk hadiah kecil.</p>
+          <p><b>Harga:</b> Rp 100.000</p>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-pink w3-padding">Cartoon Cake</div>
+          <img src="cartoon cake.jpg" alt="House" />
+        </div>
+        <div class="w3-container">
+          <p>Cartoon Cake - Kue dengan desain karakter kartun favorit.</p>
+          <p><b>Harga:</b> Rp 150.000</p>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-pink w3-padding">Couquete Cake</div>
+          <img src="couquete cake.jpg" alt="House" />
+        </div>
+        <div class="w3-container">
+          <p>Couquete Cake - Kue elegan untuk acara spesial dan formal.</p>
+          <p><b>Harga:</b> Rp 200.000</p>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-pink w3-padding">Kids Cake</div>
+          <img src="kids cake.jpg" alt="House" />
+        </div>
+        <div class="w3-container">
+          <p>Kids Cake - Kue ceria dengan warna dan desain menarik untuk anak-anak.</p>
+          <p><b>Harga:</b> Rp 120.000</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="w3-row-padding same-size">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-pink w3-padding">Macaroon Cake</div>
+          <img src="macaron cake.jpg" alt="House" />
+        </div>
+        <div class="w3-container">
+          <p>Macaroon Cake - Kue lezat dengan sentuhan macaroon yang manis.</p>
+          <p><b>Harga:</b> Rp 180.000</p>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-pink w3-padding">Matcha Cake</div>
+          <img src="macha cake8.jpg" alt="House" />
+        </div>
+        <div class="w3-container">
+          <p>Matcha Cake - Kue dengan rasa matcha autentik dari Jepang.</p>
+          <p><b>Harga:</b> Rp 170.000</p>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-pink w3-padding">Simple Cake</div>
+          <img src="simple cake.jpg" alt="House" />
+        </div>
+        <div class="w3-container">
+          <p>Simple Cake - Kue sederhana dengan cita rasa klasik.</p>
+          <p><b>Harga:</b> Rp 130.000</p>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-pink w3-padding">Ugly Cake</div>
+          <img src="ugly cake.jpg" alt="House" />
+        </div>
+        <div class="w3-container">
+          <p>Ugly Cake - Kue dengan desain unik namun rasa tetap nikmat.</p>
+          <p><b>Harga:</b> Rp 110.000</p>
+        </div>
+      </div>
+      </div>
+
+    <!-- Start Order -->
+    <section id="Order">
+      <div class="container">
+          <div class="row text-center mb-4">
+              <div class="col">
+                  <h2 class="fw-bold">Order Form</h2>
+                  <p class="text-muted">Fill out the form below to place your order.</p>
+              </div>
+          </div>
+          <div class="row justify-content-center">
+              <div class="col-md-8 d-flex justify-content-center">
+                  <div style="max-width: 400px; width: 100%;">
+                      <!-- Order Form -->
+                      <form name="Order-Form" class="justify-content-center">
+                          <div class="mb-3">
+                              <label for="Nama Pemesan" class="form-label">Nama Pemesan <span class="text-danger">*</span></label><br>
+                              <input type="text" class="form-control" id="Nama Pemesan" name="Nama Pemesan" placeholder="Enter your name" required>
+                          </div>
+                          <div class="mb-3">
+                              <label for="Alamat Pemesan" class="form-label">Alamat Pemesan <span class="text-danger">*</span></label><br>
+                              <input type="text" class="form-control" id="Alamat Pemesan" name="Alamat Pemesan" placeholder="Enter your address" required>
+                          </div>
+                          <div class="mb-3">
+                              <label for="Nama Bunga" class="form-label">Nama Cake <span class="text-danger">*</span></label><br>
+                              <input type="text" class="form-control" id="Nama Bunga" name="Nama Bunga" placeholder="Enter your cakes name" required>
+                          </div>
+                          <div class="mb-3">
+                              <label for="Notes" class="form-label">Notes</label><br>
+                              <textarea class="form-control" id="Notes" name="Notes" rows="4" placeholder="Additional notes (optional)"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary w-100" style="background-color: #f7b8a4; border-color: #f7b8a4;">Kirim</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzlX-x2AnLWPDaUib3nMj2_QLZn_chI_fBaW23fUWQ9PTc6Ak75ashrW9aRE-E1XGhM/exec'
+  const form = document.forms['Order-Form']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
